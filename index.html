@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwindcss and fonts -->
+    <link rel="stylesheet" href="stylesheets/tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+    <title>Single Product Details</title>
+    <!-- Custom styling -->
+    <style>
+      body {
+        font-family: "Space Grotesk", sans-serif;
+      }
+      .selected {
+        border: 1px solid purple;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="my-5">
+      <div class="container mx-auto px-4 md:px-2">
+        <div class="grid grid-cols-2">
+          <!-- Image -->
+          <div class="p-5 border rounded border-gray-200 m-5">
+            <div class="h-96 w-full">
+              <img
+                src="images/1.jpg"
+                id="art"
+                class="w-full rounded h-full object-cover"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- Options -->
+          <div class="mt-10 max-w-lg mx-auto">
+            <span id="desc" class="text-lg text-gray-700"
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos aut accusamus, ipsam iusto illum error nisi! Deserunt
+              facilis ratione nobis!
+            </span>
+            <p class="font-semibold mt-5 text-2xl">Product price: $<span id="price">750</span></p>
+            <div class="mt-5">
+              <button id="free" class="border p-3 rounded shadow border-gray-200 hover:shadow-lg">Free shipping: $<span>5</span></button>
+              <button id="express" class="border p-3 rounded shadow border-gray-200 hover:shadow-lg">Express shipping: $<span>30</span></button>
+            </div>
+            <div class="flex justify-between items-center mt-40">
+              <div
+                class="
+                  p-5
+                  my-2
+                  border
+                  cursor-pointer
+                  hover:border-purple-600 hover:shadow-lg
+                  rounded
+                "
+                id="first"
+              >
+                <img src="images/1.jpg" class="w-20 h-20" alt="" />
+              </div>
+              <div
+                class="
+                  p-5
+                  my-2
+                  border
+                  cursor-pointer
+                  hover:border-purple-600
+                  rounded
+                "
+                id="second"
+              >
+                <img src="images/2.jpg" class="w-20 h-20" alt="" />
+              </div>
+              <div
+                class="
+                  p-5
+                  my-2
+                  border
+                  cursor-pointer
+                  hover:border-purple-600
+                  rounded
+                "
+                id="third"
+              >
+                <img src="images/3.jpg" class="w-20 h-20" alt="" />
+              </div>
+            </div>
+            <p class="text-2xl font-semibold mt-5">Shipping charge: $<span id="shipping">0</span></p>
+            <p class="text-2xl font-semibold mt-5">Total Price: $<span id="total">750</span></p>
+            <button class="border border-gray-200 p-2 rounded mt-5 shadow">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Custom js -->
+    <script src="app.js"></script>
+  </body>
+</html>
